@@ -1,16 +1,34 @@
 # react-project-deployed
 
-# how to deploy an app on Github pages!
-1. **Install github pages**
+# How to deploy an app on Github pages!
+## 1. Install github pages.
 In your terminal, use the command ``` npm install gh-pages --save-dev ```
-2. Add commands to package.json
-- [ ] At the top, add ```"homepage": "http://username.github.io/example-repo-name",```
+## 2. Add commands to package.json
+- [ ] At the top, add 
+```json
+"homepage": "http://username.github.io/example-repo-name",
+``` 
+replacing the username and repo with your github username and repo name. You can see my package.json file for reference. 
 - [ ] In scripts, add 
-```"predeploy":"npm run build", "deploy": "gh-pages -d build", ```
-3. **Commit the repo to github**
-4. **deploy the site** using ``` npm rum deploy ``` in the terminal
-5. In the **github repo settings**, go to pages > deploy from branch > and select the branch ```gh-pages```
+```json
+"predeploy":"npm run build", 
+"deploy": "gh-pages -d build", 
+```
+## 3. **Commit the repo and push it to github.**
+Simply follow the instructions on github to push your repository.
+## 4. **Deploy the site**
+Run ``` npm rum deploy ``` in the terminal.
+ This will make your website on the gh-pages branch in your github repo. 
+## 5. Check the site has deployed on github.
+ In the **github repo settings**, in Pages click deploy from branch  and select the branch ```gh-pages``` like this:
+ ![Image of gh-pages deployment on Github](./src/gh-pages.png "Title") 
+ ## 6. Save your changes in Pages and copy your updated link. 
+ The link to your website will appear at the top of your Pages settings. Copy the link and add it to the website section of the **About** section on your github page! 
+# How to update your page after you make changes
 
+## 1. Commit and push your changes to github like you would normally,  then run ``` npm rum deploy ``` to update the deployed site. That's all! 
+
+BoilerPlate ReactJS help:
 
 # Getting Started with Create React App
 
