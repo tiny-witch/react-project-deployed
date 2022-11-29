@@ -1,3 +1,17 @@
+# react-project-deployed
+
+# how to deploy an app on Github pages!
+1. **Install github pages**
+In your terminal, use the command ``` npm install gh-pages --save-dev ```
+2. Add commands to package.json
+- [ ] At the top, add ```"homepage": "http://username.github.io/example-repo-name",```
+- [ ] In scripts, add 
+```"predeploy":"npm run build", "deploy": "gh-pages -d build", ```
+3. **Commit the repo to github**
+4. **deploy the site** using ``` npm rum deploy ``` in the terminal
+5. In the **github repo settings**, go to pages > deploy from branch > and select the branch ```gh-pages```
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,4 +82,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# react-project-deployed
